@@ -1,0 +1,130 @@
+Module                  Size  Used by
+usbhid                 77824  0
+ccm                    20480  3
+rfcomm                102400  4
+snd_seq_dummy          12288  0
+snd_hrtimer            12288  1
+nvidia_uvm           4968448  0
+qrtr                   53248  2
+nvidia_drm            122880  3
+cmac                   12288  2
+nvidia_modeset       1355776  3 nvidia_drm
+algif_hash             16384  1
+algif_skcipher         16384  1
+af_alg                 32768  6 algif_hash,algif_skcipher
+bnep                   32768  2
+nvidia              54308864  36 nvidia_uvm,nvidia_modeset
+amdgpu              20021248  43
+snd_hda_codec_realtek   208896  1
+snd_hda_codec_generic   122880  1 snd_hda_codec_realtek
+snd_hda_scodec_component    20480  1 snd_hda_codec_realtek
+amd_atl                69632  1
+snd_hda_codec_hdmi     98304  1
+intel_rapl_msr         20480  0
+snd_hda_intel          61440  5
+snd_intel_dspcfg       45056  1 snd_hda_intel
+snd_intel_sdw_acpi     16384  1 snd_intel_dspcfg
+intel_rapl_common      53248  1 intel_rapl_msr
+snd_hda_codec         204800  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+kvm                  1421312  0
+rtw88_8822ce           12288  0
+binfmt_misc            24576  1
+snd_hda_core          143360  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+uvcvideo              143360  0
+edac_mce_amd           28672  0
+crct10dif_pclmul       12288  1
+rtw88_8822c           507904  1 rtw88_8822ce
+snd_hwdep              20480  1 snd_hda_codec
+videobuf2_vmalloc      20480  1 uvcvideo
+polyval_clmulni        12288  0
+btusb                  69632  0
+snd_pcm               196608  6 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_core
+uvc                    12288  1 uvcvideo
+rtw88_pci              36864  1 rtw88_8822ce
+polyval_generic        12288  1 polyval_clmulni
+btrtl                  36864  1 btusb
+videobuf2_memops       16384  1 videobuf2_vmalloc
+nls_iso8859_1          12288  1
+snd_seq_midi           24576  0
+ghash_clmulni_intel    16384  0
+rtw88_core            360448  2 rtw88_pci,rtw88_8822c
+amdxcp                 12288  1 amdgpu
+btintel                69632  1 btusb
+videobuf2_v4l2         36864  1 uvcvideo
+snd_seq_midi_event     16384  1 snd_seq_midi
+sha256_ssse3           32768  0
+drm_exec               12288  1 amdgpu
+ee1004                 16384  0
+snd_rawmidi            57344  1 snd_seq_midi
+sha1_ssse3             32768  0
+asus_nb_wmi            32768  0
+btbcm                  24576  1 btusb
+mfd_aaeon              12288  0
+gpu_sched              61440  1 amdgpu
+videodev              360448  2 videobuf2_v4l2,uvcvideo
+mac80211             1777664  2 rtw88_pci,rtw88_core
+aesni_intel           122880  5
+snd_seq               122880  9 snd_seq_midi,snd_seq_midi_event,snd_seq_dummy
+drm_buddy              24576  1 amdgpu
+asus_wmi               94208  2 asus_nb_wmi,mfd_aaeon
+btmtk                  36864  1 btusb
+crypto_simd            16384  1 aesni_intel
+videobuf2_common       86016  4 videobuf2_vmalloc,videobuf2_v4l2,uvcvideo,videobuf2_memops
+drm_suballoc_helper    20480  1 amdgpu
+sparse_keymap          12288  1 asus_wmi
+snd_seq_device         16384  3 snd_seq,snd_seq_midi,snd_rawmidi
+cryptd                 24576  3 crypto_simd,ghash_clmulni_intel
+i2c_piix4              32768  0
+mc                     81920  4 videodev,videobuf2_v4l2,uvcvideo,videobuf2_common
+wmi_bmof               12288  0
+rapl                   20480  0
+bluetooth            1028096  34 btrtl,btmtk,btintel,btbcm,bnep,btusb,rfcomm
+drm_display_helper    278528  1 amdgpu
+platform_profile       12288  1 asus_wmi
+snd_timer              49152  3 snd_seq,snd_hrtimer,snd_pcm
+k10temp                16384  0
+cfg80211             1384448  2 rtw88_core,mac80211
+cec                    94208  1 drm_display_helper
+i2c_smbus              16384  1 i2c_piix4
+drm_ttm_helper         16384  2 amdgpu,nvidia_drm
+snd                   143360  21 snd_hda_codec_generic,snd_seq,snd_seq_device,snd_hda_codec_hdmi,snd_hwdep,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_timer,snd_pcm,snd_rawmidi
+rc_core                73728  1 cec
+libarc4                12288  1 mac80211
+ccp                   155648  0
+i2c_algo_bit           16384  1 amdgpu
+ttm                   110592  2 amdgpu,drm_ttm_helper
+soundcore              16384  1 snd
+asus_wireless          16384  0
+joydev                 32768  0
+input_leds             12288  0
+serio_raw              20480  0
+mac_hid                12288  0
+sch_fq_codel           24576  2
+msr                    12288  0
+parport_pc             53248  0
+ppdev                  24576  0
+lp                     28672  0
+parport                73728  3 parport_pc,lp,ppdev
+efi_pstore             12288  0
+nfnetlink              20480  1
+dmi_sysfs              24576  0
+ip_tables              32768  0
+x_tables               65536  1 ip_tables
+autofs4                57344  2
+hid_multitouch         36864  0
+r8169                 118784  0
+nvme                   61440  0
+hid_generic            12288  0
+ahci                   49152  4
+video                  77824  4 asus_wmi,amdgpu,asus_nb_wmi,nvidia_modeset
+crc32_pclmul           12288  0
+nvme_core             221184  1 nvme
+libahci                53248  1 ahci
+xhci_pci               24576  0
+i2c_hid_acpi           12288  0
+xhci_pci_renesas       20480  1 xhci_pci
+nvme_auth              28672  1 nvme_core
+realtek                45056  1
+i2c_hid                40960  1 i2c_hid_acpi
+wmi                    28672  4 video,asus_wmi,wmi_bmof,mfd_aaeon
+hid                   262144  4 i2c_hid,usbhid,hid_multitouch,hid_generic
