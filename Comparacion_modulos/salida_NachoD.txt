@@ -1,0 +1,399 @@
+Nombre módu. Nombre para mostrar    Tipo control. Fecha de vínculo
+============ ====================== ============= ======================
+1394ohci     Controladora de host c Kernel
+3ware        3ware                  Kernel        18/5/2015 19:28:03
+ACPI         Controlador Microsoft  Kernel
+AcpiBridge   Acpi Bridge Service    Kernel        1/9/2021 03:51:11
+AcpiDev      Controlador de disposi Kernel
+acpiex       Microsoft ACPIEx Drive Kernel
+acpipagr     Controlador de agregad Kernel
+AcpiPmi      Controlador de medidor Kernel
+acpitime     Controlador de alarma  Kernel
+Acx01000     Acx01000               Kernel
+ADP80XX      ADP80XX                Kernel        9/4/2015 17:49:48
+AFD          Controlador de función Kernel
+afunix       afunix                 Kernel
+ahcache      Application Compatibil Kernel
+amdgpio2     Controlador cliente GP Kernel        7/2/2019 06:32:20
+amdi2c       Servicio de controlado Kernel        20/3/2019 01:57:33
+AmdK8        Controlador de procesa Kernel
+AmdPPM       Controlador de procesa Kernel
+amdsata      amdsata                Kernel        14/5/2015 09:14:52
+amdsbs       amdsbs                 Kernel        11/12/2012 18:21:44
+amdwps       Controlador de program Kernel
+amdxata      amdxata                Kernel        30/4/2015 21:55:35
+ANXUcmCxCD   Liberty Service        Kernel        25/1/2021 07:22:20
+AppID        Controlador de AppId   Kernel
+AppleSSD     Dispositivo de unidad  Kernel        11/11/2019 18:24:17
+applockerflt Controlador de filtro  Kernel
+arcsas       Controlador de minipue Kernel        9/4/2015 16:12:07
+AsyncMac     Controlador de medios  Kernel
+atapi        Canal IDE              Kernel
+b06bdrv      Adaptador VBD de red Q Kernel        25/5/2016 04:03:08
+bam          Background Activity Mo Kernel
+BasicDisplay BasicDisplay           Kernel
+BasicRender  BasicRender            Kernel
+bcmfn2       bcmfn2 Service         Kernel        31/10/2016 23:09:15
+Beep         Beep                   Kernel
+bfs          Sistema de archivos de File System
+bindflt      Windows Bind Filter Dr File System
+bowser       Explorador             File System
+BthA2dp      Microsoft Bluetooth A2 Kernel
+BthEnum      Servicio enumerador de Kernel
+BthHFAud     Controlador de audio m Kernel
+BthHFEnum    Controlador de perfil  Kernel
+BthLEEnum    Controlador de Bluetoo Kernel
+BthMini      Controlador de radio B Kernel
+BTHMODEM     Controlador de comunic Kernel
+BthPan       Dispositivo Bluetooth  Kernel
+BTHPORT      Controlador de puertos Kernel
+BTHUSB       Controladora USB de ra Kernel
+bttflt       Filtro BTT VHDPMEM de  Kernel
+buttonconver Servicio para disposit Kernel
+CAD          Controlador de arbitra Kernel
+CDD          Controlador de pantall Kernel
+cdfs         CD/DVD File System Rea File System
+cdrom        Controlador de CD-ROM  Kernel
+cht4iscsi    cht4iscsi              Kernel        5/2/2019 10:51:31
+cht4vbd      Controlador de bus vir Kernel        5/2/2019 10:47:51
+CimFS        CimFS                  File System
+circlass     Dispositivos IR de con Kernel
+CldFlt       Windows Cloud Files Fi File System
+CLFS         Common Log (CLFS)      Kernel
+CmBatt       Controlador de batería Kernel
+CNG          CNG                    Kernel
+cnghwassist  CNG Hardware Assist al Kernel
+CompositeBus Controlador de enumera Kernel
+condrv       Console Driver         Kernel
+dam          Desktop Activity Moder Kernel
+devmap       Servicio de asignador  Kernel
+Dfsc         Controlador cliente de File System
+disk         Controlador de disco   Kernel
+DisplayMux   Microsoft DisplayMux   Kernel
+dmvsc        dmvsc                  Kernel
+drmkaud      Microsoft Trusted Audi Kernel
+DXGKrnl      LDDM Graphics Subsyste Kernel
+ebdrv        Adaptador VBD QLogic 1 Kernel        15/11/2020 07:12:10
+ebdrv0       QLogic Legacy Ethernet Kernel        7/11/2020 07:07:41
+EhStorClass  Enhanced Storage Filte Kernel
+EhStorTcgDrv Controlador de Microso Kernel
+ErrDev       Microsoft Hardware Err Kernel
+ExecutionCon CPU Scheduler for High Kernel
+exfat        exFAT File System Driv File System
+fastfat      FAT12/16/32 File Syste File System
+fdc          Controlador de la unid Kernel
+FileCrypt    FileCrypt              File System
+FileInfo     File Information FS Mi File System
+Filetrace    Filetrace              File System
+flpydisk     Controlador de disquet Kernel
+FltMgr       FltMgr                 File System
+FsDepends    File System Dependency File System
+fvevol       Controlador del filtro Kernel
+gencounter   Contador de generación Kernel
+genericusbfn Clase de función USB g Kernel
+GenPass      Microsoft GenPass Driv Kernel
+GPIOClx0101  Microsoft GPIO Class E Kernel
+HdAudAddServ Controlador de la func Kernel
+HDAudBus     Controlador de bus Mic Kernel
+HidBatt      Controlador de batería Kernel
+HidBth       Microsoft Bluetooth HI Kernel
+hidi2c       Controlador de minipue Kernel
+hidinterrupt Controlador común para Kernel
+HidIr        Controlador de HID de  Kernel
+hidspi       Controlador de minipue Kernel
+HidSpiCx     HidSpi KMDF Class Exte Kernel
+HidUsb       Controlador de clases  Kernel
+HpSAMD       HpSAMD                 Kernel        26/3/2013 18:36:54
+Hsp          Servicio de Microsoft  Kernel
+HTTP         Servicio HTTP          Kernel
+hvcrash      hvcrash                Kernel
+hvservice    Controlador del servic Kernel
+HwNClx0101   Microsoft Hardware Not Kernel
+hwpolicy     Hardware Policy Driver Kernel
+hyperkbd     hyperkbd               Kernel
+HyperVideo   HyperVideo             Kernel
+I3CHost      Servicio de controlado Kernel
+i8042prt     Teclado i8042 y contro Kernel
+iagpio       Controlador de la cont Kernel        23/7/2018 06:04:46
+iai2c        Controladora de host d Kernel        23/7/2018 06:04:39
+iaLPSS2i_GPI Controlador de Intel(R Kernel        19/4/2018 04:53:24
+iaLPSS2i_GPI Controlador de Intel(R Kernel        17/4/2018 06:25:15
+iaLPSS2i_GPI Controlador Intel(R) S Kernel        17/4/2018 04:07:03
+iaLPSS2i_GPI Controlador Intel(R) S Kernel        16/5/2018 02:46:36
+iaLPSS2i_I2C Controlador de Intel(R Kernel        19/4/2018 04:52:58
+iaLPSS2i_I2C Controlador de Intel(R Kernel        17/4/2018 06:24:40
+iaLPSS2i_I2C Controlador Intel(R) S Kernel        15/7/2019 02:12:12
+iaLPSS2i_I2C Controlador Intel(R) S Kernel        16/5/2018 02:46:02
+iaLPSS2_GPIO Intel(R) Serial IO GPI Kernel        12/5/2020 04:32:17
+iaLPSS2_I2C_ Intel(R) Serial IO I2C Kernel        12/5/2020 04:31:46
+iaLPSSi_GPIO Controlador de control Kernel        2/2/2015 06:00:09
+iaLPSSi_I2C  Controlador de Intel(R Kernel        24/2/2015 12:52:07
+iaStorAC     Intel(R) Chipset SATA/ Kernel        23/7/2021 10:02:14
+iaStorAfs    iaStorAfs              File System   23/7/2021 10:01:47
+iaStorAVC    Controlador Intel Chip Kernel        5/9/2019 09:07:32
+iaStorV      Controladora RAID de I Kernel        11/4/2011 15:48:16
+ibbus        Mellanox InfiniBand Bu Kernel        19/6/2019 10:20:09
+igfx         igfx                   Kernel        4/2/2022 03:05:44
+IndirectKmd  Controlador en modo ke Kernel
+IntcDAud     Sonido Intel(R) para p Kernel        30/7/2021 01:27:33
+intelide     intelide               Kernel
+intelpep     Controlador de complem Kernel
+intelpmax    Controlador de Intel(R Kernel
+IntelPMT     Servicio de la platafo Kernel
+intelppm     Controlador de procesa Kernel
+iorate       Controlador del filtro Kernel
+IpFilterDriv Controlador de filtro  Kernel
+IPMIDRV      IPMIDRV                Kernel
+IPNAT        IP Network Address Tra Kernel
+IPT          IPT                    Kernel
+isapnp       isapnp                 Kernel
+iScsiPrt     Controlador iScsiPort  Kernel
+ItSas35i     ItSas35i               Kernel        1/3/2021 07:15:20
+kbdclass     Controlador de clase d Kernel
+kbdhid       Controlador HID de tec Kernel
+kdnic        Minipuerto de red de d Kernel
+kdnic_legacy Minipuerto de red de d Kernel
+KSecDD       KSecDD                 Kernel
+KSecPkg      KSecPkg                Kernel
+KslD         KslD                   Kernel
+ksthunk      Kernel Streaming Thunk Kernel
+lltdio       Controlador de E/S del Kernel
+LSI_SAS      LSI_SAS                Kernel        25/3/2015 16:36:48
+LSI_SAS2i    LSI_SAS2i              Kernel        2/8/2017 10:29:59
+LSI_SAS3i    LSI_SAS3i              Kernel        21/8/2020 04:33:28
+luafv        Virtualización de arch File System
+mausbhost    Controlador de control Kernel
+mausbip      Controlador de filtro  Kernel
+MbbCx        MBB Network Adapter Cl Kernel
+megasas2i    megasas2i              Kernel        22/1/2020 06:57:48
+megasas35i   megasas35i             Kernel        12/1/2021 04:59:10
+megasr       megasr                 Kernel        3/6/2013 19:02:39
+MEIx64       Intel(R) Management En Kernel        8/2/2024 18:23:54
+Microsoft_Bl Controlador de transpo Kernel
+mlx4_bus     Enumerador de bus Conn Kernel        19/6/2019 10:21:08
+MMCSS        Multimedia Class Sched Kernel
+Modem        Modem                  Kernel
+monitor      Servicio de controlado Kernel
+mouclass     Controlador de clase d Kernel
+mouhid       Controlador HID de mou Kernel
+mountmgr     Administrador de punto Kernel
+mpi3drvi     mpi3drvi               Kernel        16/11/2021 19:22:38
+mpsdrv       Windows Defender Firew Kernel
+MRxDAV       Controlador de redirec File System
+mrxsmb       Contenedor y motor de  File System
+mrxsmb20     Minirredirector SMB 2. File System
+MsBridge     Puente MAC de Microsof Kernel
+Msfs         Msfs                   File System
+msgpiowin32  Controlador común para Kernel
+mshidkmdf    Pass-through HID to KM Kernel
+mshidumdf    Controlador de paso a  Kernel
+msisadrv     msisadrv               Kernel
+MSKSSRV      Proxy de servicio de s Kernel
+MsLldp       Protocolo de detección Kernel
+MSPCLOCK     Proxy del reloj de str Kernel
+MSPQM        Proxy del administrado Kernel
+MsQuic       MsQuic                 Kernel
+MsQuicPrev   MSQUIC                 Kernel
+MsRPC        MsRPC                  Kernel
+mssmbios     Controlador BIOS de Mi Kernel
+MSTEE        Convertidor Tee/Sink-t Kernel
+MTConfig     Microsoft Input Config Kernel
+Mup          Mup                    File System
+mvumis       mvumis                 Kernel        23/5/2014 17:39:04
+NativeWifiP  Filtro NativeWiFi      Kernel
+ndfltr       Servicio NetworkDirect Kernel        19/6/2019 10:18:42
+NDIS         Controlador de sistema Kernel
+NdisCap      Captura de NDIS de Mic Kernel
+NdisImPlatfo Microsoft Network Adap Kernel
+NdisTapi     Controlador TAPI NDIS  Kernel
+Ndisuio      NDIS Usermode I/O Prot Kernel
+NdisVirtualB Enumerador de adaptado Kernel
+NdisWan      Controlador WAN NDIS d Kernel
+ndiswanlegac Controlador WAN NDIS h Kernel
+NDKPerf      NDKPerf Driver         Kernel
+NDKPing      NDKPing Driver         Kernel
+ndproxy      NDIS Proxy Driver      Kernel
+Ndu          Windows Network Data U Kernel
+NetAdapterCx Network Adapter WDF Cl Kernel
+NetBIOS      NetBIOS Interface      File System
+NetBT        NetBT                  Kernel
+netvsc       netvsc                 Kernel
+NetworkPriva Microsoft Network Priv Kernel
+Npfs         Npfs                   File System
+npsvctrig    Named pipe service tri Kernel
+nsiproxy     NSI Proxy Service Driv Kernel
+Ntfs         Ntfs                   File System
+Null         Null                   Kernel
+nvdimm       Controlador de disposi Kernel
+nvmedisk     Controlador de disco N Kernel
+nvraid       nvraid                 Kernel        21/4/2014 15:28:42
+nvstor       nvstor                 Kernel        21/4/2014 15:34:03
+P9Rdr        Plan 9 Redirector Driv Kernel
+Parport      Controlador de puerto  Kernel
+partmgr      Controlador de partici Kernel
+pci          Controlador de bus PCI Kernel
+pciide       pciide                 Kernel
+pcmcia       pcmcia                 Kernel
+pcw          Performance Counters f Kernel
+pdc          pdc                    Kernel
+PEAUTH       PEAUTH                 Kernel
+percsas2i    percsas2i              Kernel        14/3/2016 21:50:11
+percsas3i    percsas3i              Kernel        1/6/2018 18:47:02
+PktMon       Packet Monitor Driver  Kernel
+PktMonApi    Packet Monitor Export  Kernel
+PlutonHeci   Microsoft Pluton Secur Kernel
+PlutonHsp2   Microsoft Pluton Servi Kernel
+pmem         Controlador de disco d Kernel
+PNPMEM       Controlador de módulo  Kernel
+portcfg      portcfg                Kernel
+PptpMiniport Minipuerto WAN (PPTP)  Kernel
+PRM          Controlador de Microso Kernel
+Processor    Controlador de procesa Kernel
+Psched       Programador de paquete Kernel
+pvscsi       pvscsi Storage Control Kernel        20/5/2021 00:55:26
+QWAVEdrv     Controlador de QWAVE   Kernel
+Ramdisk      Controlador de disco R Kernel
+RasAcd       Remote Access Auto Con Kernel
+RasAgileVpn  Minipuerto WAN (IKEv2) Kernel
+Rasl2tp      Minipuerto WAN (L2TP)  Kernel
+RasPppoe     Controlador PPPOE de a Kernel
+RasSstp      Minipuerto WAN (SSTP)  Kernel
+rdbss        Subsistema de almacena File System
+rdpbus       Controlador de bus del Kernel
+RDPDR        Controlador del Redire Kernel
+rdyboost     ReadyBoost             Kernel
+ReFS         ReFS                   File System
+ReFSv1       ReFSv1                 File System
+RFCOMM       Bluetooth Device (RFCO Kernel
+rhproxy      Controlador de proxy d Kernel
+rspndr       Respondedor de detecci Kernel
+rt640x64     Realtek RT640 NT Drive Kernel        24/5/2024 03:57:12
+RtkBtFilter  Realtek Bluetooth Filt Kernel        22/5/2020 04:44:51
+rtots640x64  Realtek RTOTS640 NT Dr Kernel        11/5/2021 00:30:41
+RTSPER       Realtek PCIE Card Read Kernel        3/8/2021 05:45:04
+RTWlanE      Realtek Wireless LAN 8 Kernel        10/7/2019 05:10:37
+s3cap        s3cap                  Kernel
+sbp2port     Controlador de bus de  Kernel
+scfilter     Smart card PnP Class F Kernel
+scmbus       Controlador de bus de  Kernel
+sdbus        sdbus                  Kernel
+sdstor       Controlador de puerto  Kernel
+SerCx        Serial UART Support Li Kernel
+SerCx2       Serial UART Support Li Kernel
+Serenum      Controlador de filtro  Kernel
+Serial       Controlador de puerto  Kernel
+sermouse     Controlador de mouse p Kernel
+sfloppy      Unidad de disquete de  Kernel
+SiSRaid2     SiSRaid2               Kernel        24/9/2008 15:28:20
+SiSRaid4     SiSRaid4               Kernel        1/10/2008 18:56:04
+SmartSAMD    SmartSAMD              Kernel        21/2/2019 14:54:44
+spaceparser  spaceparser            Kernel
+spaceport    Controlador de espacio Kernel
+SpbCx        Simple Peripheral Bus  Kernel
+srv2         Controlador de servido File System
+srvnet       srvnet                 File System
+stexstor     stexstor               Kernel        26/11/2012 21:02:51
+storahci     Controladora SATA AHCI Kernel
+storflt      Acelerador de almacena Kernel
+stornvme     Controlador de NVM Exp Kernel
+storqosflt   Controlador de filtro  File System
+storufs      Controlador para UFS ( Kernel
+storvsc      storvsc                Kernel
+swenum       Controlador del bus de Kernel
+Tcpip        Controlador de protoco Kernel
+Tcpip6       @todo.dll,-100;Microso Kernel
+tcpipreg     @%SystemRoot%\System32 Kernel
+tdx          Controlador de soporte Kernel
+terminpt     Controlador de entrada Kernel
+ThermalFilte Controlador de filtro  Kernel
+TPM          TPM                    Kernel
+TsUsbFlt     Controlador de filtro  Kernel
+TsUsbGD      Dispositivo USB genéri Kernel
+tunnel       Controlador de adaptad Kernel
+UASPStor     Controlador de SCSI co Kernel
+UcmCx0101    USB Connector Manager  Kernel
+UcmTcpciCx01 UCM-TCPCI KMDF Class E Kernel
+UcmUcsiAcpiC Cliente ACPI UCM-UCSI  Kernel
+UcmUcsiCx010 UCM-UCSI KMDF Class Ex Kernel
+UCPD         UCPD                   File System
+Ucx01000     USB Host Support Libra Kernel
+UdeCx        USB Device Emulation S Kernel
+udfs         udfs                   File System
+UEFI         Controlador UEFI de Mi Kernel
+Ufx01000     USB Function Class Ext Kernel
+UfxChipidea  Controlador USB Chipid Kernel
+ufxsynopsys  Controlador USB Synops Kernel
+uiomap       Servicio de controlado Kernel
+umbus        Controlador de enumera Kernel
+UmPass       Controlador UMPass de  Kernel
+UnionFS      UnionFS                File System
+UrsChipidea  Controlador USB de cam Kernel
+UrsCx01000   USB Role-Switch Suppor Kernel
+UrsSynopsys  Controlador USB de cam Kernel
+Usb4DeviceRo Servicio de enrutador  Kernel
+Usb4HostRout Servicio enrutador de  Kernel
+usbaudio     Controlador de audio U Kernel
+usbaudio2    Servicio de audio USB  Kernel
+usbccgp      Controlador primario g Kernel
+usbcir       Receptor de infrarrojo Kernel
+usbehci      Controlador de minipue Kernel
+usbhub       Controlador de concent Kernel
+USBHUB3      Concentrador de veloci Kernel
+usbohci      Controlador de minipue Kernel
+usbprint     Clase de impresora USB Kernel
+usbser       Controlador serie USB  Kernel
+USBSTOR      Controlador de disposi Kernel
+usbuhci      Controlador de minipue Kernel
+usbvideo     Dispositivo de vídeo U Kernel
+USBXHCI      USB xHCI Compliant Hos Kernel
+vdrvroot     Enumerador de unidades Kernel
+VerifierExt  Extensión del comproba Kernel
+vhdmp        vhdmp                  Kernel
+vhf          Controlador de marco d Kernel
+Vid          Vid                    Kernel
+VirtualRende VirtualRender          Kernel
+vmbus        Bus de máquina virtual Kernel
+VMBusHID     VMBusHID               Kernel
+vmgid        Controlador de infraes Kernel
+volmgr       Controlador del admini Kernel
+volmgrx      Administrador de volúm Kernel
+volsnap      Controlador de instant Kernel
+volume       Controlador de volumen Kernel
+vpci         Bus PCI virtual de Mic Kernel
+vsmraid      vsmraid                Kernel        22/4/2014 16:21:41
+VSTXRAID     Controlador de Windows Kernel        21/1/2013 16:00:28
+vwifibus     Controlador de bus ina Kernel
+vwififlt     Virtual WiFi Filter Dr Kernel
+vwifimp      Servicio minipuerto Wi Kernel
+WacomPen     Controlador HID de láp Kernel
+wanarp       Controlador ARP IP de  Kernel
+wanarpv6     Controlador ARP IPv6 d Kernel
+wcifs        Windows Container Isol File System
+WdBoot       Controlador de arranqu Kernel
+Wdf01000     Servicio de marcos de  Kernel
+WdFilter     Controlador de minifil File System
+wdiwifi      WDI Driver Framework   Kernel
+WdmCompanion WdmCompanionFilter     Kernel
+WdNisDrv     Controlador del Sistem Kernel
+WFPLWFS      Plataforma de filtrado Kernel
+Wificx       Wifi Network Adapter C Kernel
+WIMMount     WIMMount               File System
+WinAccelCx01 Microsoft Accelerator  Kernel
+WindowsTrust Windows Trusted Execut Kernel
+WindowsTrust Servicio seguro en tie Kernel
+wini3ctarget Controlador genérico p Kernel
+WinMad       Servicio WinMad        Kernel        19/6/2019 10:18:11
+WinNat       Controlador de Windows Kernel
+WINUSB       Controlador WinUsb     Kernel
+WinVerbs     Servicio WinVerbs      Kernel        19/6/2019 10:18:12
+WmiAcpi      Microsoft Windows Mana Kernel
+Wof          Windows Overlay File S File System
+WpdUpFltr    WPD Upper Class Filter Kernel
+ws2ifsl      Controlador Winsock IF Kernel
+wtd          wtd                    Kernel
+WudfPf       User Mode Driver Frame Kernel
+WUDFRd       Windows Driver Foundat Kernel
+WUDFWpdFs    Controlador de sistema Kernel
+xboxgip      Controlador de protoco Kernel
+xinputhid    Controlador de filtro  Kernel
+xusb22       Servicio 22 del contro Kernel
