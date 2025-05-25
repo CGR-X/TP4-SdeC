@@ -137,12 +137,12 @@ Hay dos tipos principales:
 # Desafio de 11 preguntas
 
 1. Al consultar por la informacion de nuestro módulo observamos lo siguiente  
-   ![](Imagenes/Consigna1_1)
+   ![](Imagenes/Consigna_1_1.png)
    Ahora al consultar por la informacion del otro módulo vemos:  
-   ![](Imagenes/Consigna1_2)  
+   ![](Imagenes/Consigna_1_2.png)  
    A la hora de compararlos podemos decir que la diferencia principal entre los dos comandos modinfo es que en el segundo caso se está consultando un módulo del kernel oficial del sistema (des\_generic.ko.zst), que forma parte de los módulos de criptografía del núcleo de Linux, está comprimido, firmado digitalmente y ubicado en la carpeta del sistema (/lib/modules/...). En cambio, en el primer caso se está consultando un módulo personalizado (mimodulo.ko) desarrollado por un Catedra de SdeC, que no está comprimido ni firmado, y se encuentra en una carpeta local del usuario. Además, los módulos pertenecen a versiones distintas del kernel, lo que también explica por qué uno puede no estar disponible en el otro entorno.
 
-2.  Carpeta comparacion modulos faltan de nachito\_v.1 y nachito\_v.2  
+2.  Carpeta comparacion modulos 
      
 3.  Este punto apunta a diferenciar entre:  
 * **Módulos cargados:** los que actualmente están siendo utilizados por el sistema (vistos con `lsmod` o `/proc/modules`).
@@ -150,7 +150,7 @@ Hay dos tipos principales:
 * **Módulos disponibles:** los que están instalados en tu sistema pero aún **no están cargados en el kernel**.
 
   Vamos a ver los modulos que estan disponibles pero no cargados:  
-   ![](Imagenes/Consigna3_1)  
+   ![](Imagenes/Consigna_3_1.png)  
   Si estos se necesitan pero no se cargan automaticamente los podemos cargar manualmente.  
   Si el **driver del dispositivo no está cargado**, **el dispositivo no funciona**.  
   Ejemplo: si no está cargado `snd_hda_intel`, es posible que **no tengas sonido**.  
@@ -194,7 +194,7 @@ Hay dos tipos principales:
 
 * Ejemplos: drivers de dispositivos, sistemas de archivos, módulos de seguridad.  
 6. Se realiza un programa en C que imprima un “Hello, world” y se ejecuta con el comando ‘strace ./helloworld’ que muestra en pantalla todas las llamadas al sistema que hace el programa mientras corre.  
-      ![](Imagenes/Consigna6_1)  
+      ![](Imagenes/Consigna_6_1.png)  
 
    ### **Análisis de la salida `strace ./helloworld`**
 
@@ -298,11 +298,11 @@ El proceso de firmado de un módulo de kernel fue exitoso. Este procedimiento co
 
 9. A continuacion presentaremos las imagenes de nuestro propio modulo siendo compilado, cardgado y descargado
  **Compilacion del modulo**
-![](Imagenes/Consigna9_1)
+![](Imagenes/Consigna_9_1.png)
 **Carga del modulo**
-![](Imagenes/Consigna9_2)
+![](Imagenes/Consigna_9_2.png)
 **Descarga del modulo**
-![](Imagenes/Consigna9_3)
+![](Imagenes/Consigna_9_3.png)
  
 10. Secure Boot es una característica que asegura que solo software firmado y confiable pueda ejecutarse durante el proceso de arranque, incluyendo módulos del kernel. El kernel de Linux, cuando Secure Boot está activo, verifica las firmas digitales de los módulos antes de cargarlos.  
     Si mi compañero tiene Secure Boot habilitado, su sistema sólo permitirá cargar módulos firmados con claves que estén registradas y confiables para ese sistema.
