@@ -297,13 +297,13 @@ Conclusión de la actividad:
 El proceso de firmado de un módulo de kernel fue exitoso. Este procedimiento contribuye a mejorar la seguridad del sistema, impidiendo que módulos no autorizados (como rootkits) se carguen en el kernel, especialmente en sistemas protegidos por Secure Boot.
 
 9. A continuacion presentaremos las imagenes de nuestro propio modulo siendo compilado, cardgado y descargado
- **Compilacion del modulo**
-![](Imagenes/Consigna_9_1.png)
-**Carga del modulo**
-![](Imagenes/Consigna_9_2.png)
-**Descarga del modulo**
-![](Imagenes/Consigna_9_3.png)
- 
+ **Compilacion del modulo**  
+![](Imagenes/Consigna_9_1.png)  
+**Carga del modulo**  
+![](Imagenes/Consigna_9_2.png)  
+**Descarga del modulo**  
+![](Imagenes/Consigna_9_3.png)  
+   
 10. Secure Boot es una característica que asegura que solo software firmado y confiable pueda ejecutarse durante el proceso de arranque, incluyendo módulos del kernel. El kernel de Linux, cuando Secure Boot está activo, verifica las firmas digitales de los módulos antes de cargarlos.  
     Si mi compañero tiene Secure Boot habilitado, su sistema sólo permitirá cargar módulos firmados con claves que estén registradas y confiables para ese sistema.
 
