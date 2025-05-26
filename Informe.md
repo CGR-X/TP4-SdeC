@@ -238,10 +238,10 @@ Hay dos tipos principales:
 
 * El programa puede instalar un handler para la señal SIGSEGV para intentar manejar la excepción (poco común, usado en depuradores o entornos especiales).
 
-* Usualmente, el programa no maneja el segfault y termina abruptamente.
-
-
-8.   A continacion documentamos el Proceso de firma paso a paso:
+* Usualmente, el programa no maneja el segfault y termina abruptamente.  
+  
+  
+8.   A continacion documentamos el Proceso de firma paso a paso:  
 
 Generación de la clave y certificado
    -------------------------------------
