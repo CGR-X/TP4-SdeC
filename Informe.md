@@ -82,57 +82,57 @@ modinfo /lib/modules/$(uname \-r)/kernel/crypto/des\_generic.ko
 
 1. ¿ Qué funciones tiene disponible un programa y un módulo ?
 
-Primero necesitamos saber que es un programa y un módulo.
+	Primero necesitamos saber que es un programa y un módulo.
 
-Un programa es una unidad ejecutable completa la cual tiene como funciones disponibles:
+	Un programa es una unidad ejecutable completa la cual tiene como funciones disponibles:
 
-* Funciones propias, definidas por el programador.
+	* Funciones propias, definidas por el programador.
 
-* Funciones del sistema operativo, a través de llamadas al sistema (manejo de procesos, archivos, memoria, etc.).
+	* Funciones del sistema operativo, a través de llamadas al sistema (manejo de procesos, archivos, memoria, etc.).
 
-* Funciones de bibliotecas estándar o externas, que amplían sus capacidades (como operaciones con cadenas, entrada/salida, etc.).
+	* Funciones de bibliotecas estándar o externas, que amplían sus capacidades (como operaciones con cadenas, entrada/salida, etc.).
 
-Y un módulo es una parte del programa que agrupa funciones relacionadas la cual tiene como funciones disponibles:
+	Y un módulo es una parte del programa que agrupa funciones relacionadas la cual tiene como funciones disponibles:
 
-* Funciones internas, utilizadas solo dentro del módulo.
+	* Funciones internas, utilizadas solo dentro del módulo.
 
-* Funciones exportadas, accesibles desde otros módulos o el programa principal.
+	* Funciones exportadas, accesibles desde otros módulos o el programa principal.
 
-* Funciones importadas, provenientes de otros módulos o bibliotecas.
+	* Funciones importadas, provenientes de otros módulos o bibliotecas.
 
-* Funciones del sistema, si el módulo lo requiere (por ejemplo, en módulos del kernel).
+	* Funciones del sistema, si el módulo lo requiere (por ejemplo, en módulos del kernel).
 
-En resumen, el programa integra y coordina múltiples funciones, mientras que el módulo organiza y encapsula funcionalidades específicas.
+	En resumen, el programa integra y coordina múltiples funciones, mientras que el módulo organiza y encapsula funcionalidades específicas.
 
 2.   Espacio de usuario o espacio del kernel.
+  
+	 **Espacio de usuario** :  
+ 	Es la región de memoria donde se ejecutan los programas de aplicación. Los procesos que corren en este espacio no tienen acceso directo al hardware ni a la memoria del sistema. Para interactuar con el sistema operativo, deben realizar llamadas al sistema (system calls). Esta separación protege al sistema de errores o acciones maliciosas en los programas de usuario.
 
-**Espacio de usuario**:  
- Es la región de memoria donde se ejecutan los programas de aplicación. Los procesos que corren en este espacio no tienen acceso directo al hardware ni a la memoria del sistema. Para interactuar con el sistema operativo, deben realizar llamadas al sistema (system calls). Esta separación protege al sistema de errores o acciones maliciosas en los programas de usuario.
-
-**Espacio del kernel**:  
- Es la zona donde se ejecuta el núcleo del sistema operativo y sus componentes (gestión de procesos, memoria, dispositivos, etc.). Tiene acceso completo al hardware y a todos los recursos del sistema. El código que corre en este espacio lo hace en modo privilegiado (modo kernel), lo que permite realizar operaciones críticas.
+	 **Espacio del kernel** :  
+ 	Es la zona donde se ejecuta el núcleo del sistema operativo y sus componentes (gestión de procesos, memoria, dispositivos, etc.). Tiene acceso completo al hardware y a todos los recursos del sistema. El código que corre en este espacio lo hace en modo privilegiado (modo kernel), lo que permite realizar operaciones críticas.
 
 3. Espacio de datos.
 
-El espacio de datos es una región de memoria dentro del espacio de direcciones de un proceso donde se almacenan las variables globales, estáticas y los segmentos de datos inicializados o no inicializados del programa.
+	El espacio de datos es una región de memoria dentro del espacio de direcciones de un proceso donde se almacenan las variables globales, estáticas y los segmentos de datos inicializados o no inicializados del programa.
 
-Se divide comúnmente en dos partes:
+	Se divide comúnmente en dos partes:
 
-* Datos inicializados: contiene variables globales o estáticas a las que se les asigna un valor al momento de la compilación.
+	* Datos inicializados: contiene variables globales o estáticas a las que se les asigna un valor al momento de la compilación.
 
-* Datos no inicializados (BSS): contiene variables globales o estáticas que no tienen un valor inicial definido. Se inicializan en cero en tiempo de ejecución.
+	* Datos no inicializados (BSS): contiene variables globales o estáticas que no tienen un valor inicial definido. Se inicializan en cero en tiempo de ejecución.
 
-Este espacio forma parte de la memoria del proceso y es gestionado por el sistema operativo cuando se carga el programa.
+	Este espacio forma parte de la memoria del proceso y es gestionado por el sistema operativo cuando se carga el programa.
 
 4. Drivers. Investigar contenido de /dev.
 
-Los drivers son módulos de software que permiten al sistema operativo interactuar con el hardware. Cada tipo de hardware necesita un driver específico que interprete y traduzca las instrucciones del sistema operativo en comandos que el dispositivo pueda entender.	En Linux, `/dev` contiene archivos especiales que representan esos dispositivos y permiten a los programas acceder a ellos como si fueran archivos normales.
+	Los drivers son módulos de software que permiten al sistema operativo interactuar con el hardware. Cada tipo de hardware necesita un driver específico que interprete y traduzca las instrucciones del sistema operativo en comandos que el dispositivo pueda entender.	En Linux, `/dev` contiene archivos especiales que representan esos dispositivos y permiten a los programas acceder a ellos como si fueran archivos normales.
 
-Hay dos tipos principales:
+	Hay dos tipos principales:
 
-* **Dispositivos de carácter**: se accede a ellos byte a byte (ej.: `/dev/tty`, `/dev/random`).
+	* **Dispositivos de carácter**: se accede a ellos byte a byte (ej.: `/dev/tty`, `/dev/random`).
 
-* **Dispositivos de bloque**: se accede a ellos en bloques de datos (ej.: discos como `/dev/sda`, `/dev/sdb1`).
+	* **Dispositivos de bloque**: se accede a ellos en bloques de datos (ej.: discos como `/dev/sda`, `/dev/sdb1`).
 
 # Desafio de 11 preguntas
 
@@ -145,156 +145,157 @@ Hay dos tipos principales:
 2.  Carpeta comparacion modulos 
      
 3.  Este punto apunta a diferenciar entre:  
-* **Módulos cargados:** los que actualmente están siendo utilizados por el sistema (vistos con `lsmod` o `/proc/modules`).
+	* **Módulos cargados:** los que actualmente están siendo utilizados por el sistema (vistos con `lsmod` o `/proc/modules`).
 
-* **Módulos disponibles:** los que están instalados en tu sistema pero aún **no están cargados en el kernel**.
+	* **Módulos disponibles:** los que están instalados en tu sistema pero aún **no están cargados en el kernel**.
 
-  Vamos a ver los modulos que estan disponibles pero no cargados:  
-   ![](Imagenes/Consigna_3_1.png)  
-  Si estos se necesitan pero no se cargan automaticamente los podemos cargar manualmente.  
-  Si el **driver del dispositivo no está cargado**, **el dispositivo no funciona**.  
-  Ejemplo: si no está cargado `snd_hda_intel`, es posible que **no tengas sonido**.  
-  Si **el módulo no existe**, entonces:
+  	Vamos a ver los modulos que estan disponibles pero no cargados:  
+   	![](Imagenes/Consigna_3_1.png)  
+  	Si estos se necesitan pero no se cargan automaticamente los podemos cargar manualmente.  
+  	Si el **driver del dispositivo no está cargado**, **el dispositivo no funciona**.  
+  	Ejemplo: si no está cargado `snd_hda_intel`, es posible que **no tengas sonido**.  
+  	Si **el módulo no existe**, entonces:
 
-  * Puede que **no esté instalado** (falta el paquete).
+  	* Puede que **no esté instalado** (falta el paquete).
 
-  * Puede que el **hardware no sea compatible**.
+  	* Puede que el **hardware no sea compatible**.
 
-  * Puede que necesites compilar el módulo o usar uno **privativo** (como los de NVIDIA o Broadcom).
+  	* Puede que necesites compilar el módulo o usar uno **privativo** (como los de NVIDIA o Broadcom).
 
 4. Se subió el resultado de la ejecución a la carpeta HWinfo en un archivo .txt.  
    importancia de esto:  
-- Te permite ver si hay hardware no reconocido.  
-- Podés asociar qué módulos están o deberían estar cargados.  
-- Te ayuda a identificar diferencias entre PCs reales y virtuales.
+	- Te permite ver si hay hardware no reconocido.  
+	- Podés asociar qué módulos están o deberían estar cargados.  
+	- Te ayuda a identificar diferencias entre PCs reales y virtuales.
 
 5.  **Diferencia entre un módulo y un programa**
 
-**Programa:**
+	**Programa:**
 
-* Es un archivo ejecutable que corre en espacio de usuario (user space).
+	* Es un archivo ejecutable que corre en espacio de usuario (user space).
 
-* Se ejecuta como un proceso independiente.
+	* Se ejecuta como un proceso independiente.
 
-* No tiene acceso directo al hardware ni al kernel.
+	* No tiene acceso directo al hardware ni al kernel.
 
-* Para interactuar con el kernel, usa llamadas al sistema (syscalls).
+	* Para interactuar con el kernel, usa llamadas al sistema (syscalls).
 
-* Ejemplos: navegadores web, editores de texto, juegos.
+	* Ejemplos: navegadores web, editores de texto, juegos.
 
-**Módulo del kernel:**
+	**Módulo del kernel:**
 
-* Es código que se carga y ejecuta dentro del espacio del kernel (kernel space).
+	* Es código que se carga y ejecuta dentro del espacio del kernel (kernel space).
 
-* Extiende o modifica la funcionalidad del kernel sin necesidad de recompilarlo o reiniciar.
+	* Extiende o modifica la funcionalidad del kernel sin necesidad de recompilarlo o reiniciar.
 
-* Tiene acceso directo a hardware y a recursos críticos del sistema.
+	* Tiene acceso directo a hardware y a recursos críticos del sistema.
 
-* Puede ser cargado (`insmod`) y descargado (`rmmod`) en tiempo de ejecución.
+	* Puede ser cargado (`insmod`) y descargado (`rmmod`) en tiempo de ejecución.
 
-* Ejemplos: drivers de dispositivos, sistemas de archivos, módulos de seguridad.  
+	* Ejemplos: drivers de dispositivos, sistemas de archivos, módulos de seguridad.
+  
 6. Se realiza un programa en C que imprima un “Hello, world” y se ejecuta con el comando ‘strace ./helloworld’ que muestra en pantalla todas las llamadas al sistema que hace el programa mientras corre.  
       ![](Imagenes/Consigna_6_1.png)  
 
-   ### **Análisis de la salida `strace ./helloworld`**
+	**Análisis de la salida `strace ./helloworld`**  
 
-* `execve("./helloworld", ...)`  
-   El programa `helloworld` es ejecutado, el kernel carga el binario y los argumentos.
+	* `execve("./helloworld", ...)`  
+   	El programa `helloworld` es ejecutado, el kernel carga el binario y los argumentos.  
+  
+	* `brk(NULL)` y `brk(0x5d917fff1000)`  
+	Gestión del heap, el programa pide memoria al sistema para la ejecución.  
+  
+	* `mmap(...)`  
+   	Mapeo de memoria para librerías y datos, por ejemplo, cargar `libc.so.6` (la biblioteca estándar de C).  
 
-* `brk(NULL)` y `brk(0x5d917fff1000)`  
-   Gestión del heap, el programa pide memoria al sistema para la ejecución.
+	* `openat(...)`, `read(...)`, `close(...)`  
+   	El programa accede al sistema de archivos para cargar la configuración y las librerías necesarias (ejemplo: `/etc/ld.so.cache` y la librería `libc.so.6`).  
 
-* `mmap(...)`  
-   Mapeo de memoria para librerías y datos, por ejemplo, cargar `libc.so.6` (la biblioteca estándar de C).
+	* `write(1, "Hello, world!\n", 14)`  
+   	Escribe la cadena en el descriptor 1, que es stdout (la pantalla).  
 
-* `openat(...)`, `read(...)`, `close(...)`  
-   El programa accede al sistema de archivos para cargar la configuración y las librerías necesarias (ejemplo: `/etc/ld.so.cache` y la librería `libc.so.6`).
-
-* `write(1, "Hello, world!\n", 14)`  
-   Escribe la cadena en el descriptor 1, que es stdout (la pantalla).
-
-* `exit_group(0)`  
-   Finaliza el proceso con código de salida 0\.
+	* `exit_group(0)`   
+   	Finaliza el proceso con código de salida 0\.  
 
  	**¿Por qué es importante esta lista?**
 
-* Nos muestra la interacción directa con el kernel: apertura de archivos, asignación de memoria, escritura en pantalla, terminación del proceso.
+	* Nos muestra la interacción directa con el kernel: apertura de archivos, asignación de memoria, escritura en pantalla, terminación del proceso.
 
-* Nos ayuda a entender que aunque el programa es muy simple, hace muchas llamadas al sistema para funcionar correctamente.
+	* Nos ayuda a entender que aunque el programa es muy simple, hace muchas llamadas al sistema para funcionar correctamente.
 
 
 7. Un **segmentation fault (segfault)** es un error que ocurre cuando un programa intenta acceder a una zona de memoria que no tiene permiso para usar, o intenta acceder a memoria de forma incorrecta (por ejemplo, escritura en una dirección de solo lectura).  
-   Cada proceso tiene asignado un espacio de direcciones de memoria, con permisos (lectura, escritura, ejecución). Si el programa intenta acceder fuera de ese espacio o a memoria con permisos prohibidos, el hardware detecta esta violación. La CPU genera una excepción de violación de segmento y notifica al kernel.
+   Cada proceso tiene asignado un espacio de direcciones de memoria, con permisos (lectura, escritura, ejecución). Si el programa intenta acceder fuera de ese espacio o a memoria con permisos prohibidos, el hardware detecta esta violación. La CPU genera una excepción de violación de segmento y notifica al kernel.  
+  
+	**Manejo por el kernel**  
+  
+	* El kernel recibe esta excepción y envía una señal SIGSEGV al proceso que causó la violación.
 
-   ### **Manejo por el kernel**
+	* Si el proceso no maneja esta señal, el kernel termina el proceso inmediatamente (core dump opcional).
 
-* El kernel recibe esta excepción y envía una señal SIGSEGV al proceso que causó la violación.
+	* Esto evita que el programa corrompa la memoria o afecte a otros procesos o al sistema.  
+  
+	**Manejo por un programa**  
+  
+	* El programa puede instalar un handler para la señal SIGSEGV para intentar manejar la excepción (poco común, usado en depuradores o entornos especiales).
 
-* Si el proceso no maneja esta señal, el kernel termina el proceso inmediatamente (core dump opcional).
-
-* Esto evita que el programa corrompa la memoria o afecte a otros procesos o al sistema.
-
-### **Manejo por un programa**
-
-* El programa puede instalar un handler para la señal SIGSEGV para intentar manejar la excepción (poco común, usado en depuradores o entornos especiales).
-
-* Usualmente, el programa no maneja el segfault y termina abruptamente.  
+	* Usualmente, el programa no maneja el segfault y termina abruptamente.  
   
   
-8.   A continacion documentamos el Proceso de firma paso a paso:  
+8. A continacion documentamos el Proceso de firma paso a paso:  
+  
+	Generación de la clave y certificado
+  	 -------------------------------------
+  	 Se generó un par de clave privada y certificado X.509 autofirmado:
 
-Generación de la clave y certificado
-   -------------------------------------
-   Se generó un par de clave privada y certificado X.509 autofirmado:
+   	Comando:
+	   openssl req -new -x509 -newkey rsa:2048 -keyout my_key.priv -outform DER -out my_key.der -nodes -days 36500 -subj "/CN=MiModulo/"
 
-   Comando:
-   openssl req -new -x509 -newkey rsa:2048 -keyout my_key.priv -outform DER -out my_key.der -nodes -days 36500 -subj "/CN=MiModulo/"
+  	 Archivos generados:
+  	 - my_key.priv (clave privada)
+  	 - my_key.der (certificado público en formato DER)
 
-   Archivos generados:
-   - my_key.priv (clave privada)
-   - my_key.der (certificado público en formato DER)
+	Compilación del módulo
+   	-----------------------
+   	Se utilizó un módulo simple llamado "mimodulo.ko", compilado con un Makefile estándar utilizando los headers del kernel.
 
-Compilación del módulo
-   -----------------------
-   Se utilizó un módulo simple llamado "mimodulo.ko", compilado con un Makefile estándar utilizando los headers del kernel.
+   	Comando:
+   	make
 
-   Comando:
-   make
+	Firma del módulo
+   	-----------------
+   	Se procedió a firmar el archivo binario del módulo (.ko) utilizando el script sign-file provisto por el kernel.
 
-Firma del módulo
-   -----------------
-   Se procedió a firmar el archivo binario del módulo (.ko) utilizando el script sign-file provisto por el kernel.
+   	Comando:
+   	sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256 my_key.priv my_key.der mimodulo.ko
 
-   Comando:
-   sudo /usr/src/linux-headers-$(uname -r)/scripts/sign-file sha256 my_key.priv my_key.der mimodulo.ko
+   	Resultado:
+   	El módulo fue modificado en su contenido binario, incluyendo una firma digital basada en SHA256.
 
-   Resultado:
-   El módulo fue modificado en su contenido binario, incluyendo una firma digital basada en SHA256.
+	Verificación
+   	-------------
+   	Se utilizó el comando modinfo para observar información del módulo firmado.
 
-Verificación
-   -------------
-   Se utilizó el comando modinfo para observar información del módulo firmado.
+   	Comando:
+   	modinfo mimodulo.ko
 
-   Comando:
-   modinfo mimodulo.ko
+   	Resultado esperado (fragmento relevante):
+   	signature: 00:00:00:...
 
-   Resultado esperado (fragmento relevante):
-   signature: 00:00:00:...
+	Carga del módulo en el kernel
+   	------------------------------
+   	El módulo fue cargado utilizando insmod y verificado en los registros del kernel.
 
-Carga del módulo en el kernel
-   ------------------------------
-   El módulo fue cargado utilizando insmod y verificado en los registros del kernel.
+   	Comando:
+   	sudo insmod mimodulo.ko
+   	dmesg | tail -n 10
 
-   Comando:
-   sudo insmod mimodulo.ko
-   dmesg | tail -n 10
-
-   Mensaje esperado:
-   [timestamp] mimodulo: módulo cargado correctamente (firmado).
-
-Conclusión de la actividad:
------------
-El proceso de firmado de un módulo de kernel fue exitoso. Este procedimiento contribuye a mejorar la seguridad del sistema, impidiendo que módulos no autorizados (como rootkits) se carguen en el kernel, especialmente en sistemas protegidos por Secure Boot.
+   	Mensaje esperado:
+   	[timestamp] mimodulo: módulo cargado correctamente (firmado).  
+  
+	Conclusión de la actividad:
+	-----------
+	El proceso de firmado de un módulo de kernel fue exitoso. Este procedimiento contribuye a mejorar la seguridad del sistema, impidiendo que módulos no autorizados (como rootkits) se carguen en el 	kernel, especialmente en sistemas protegidos por Secure Boot.
 
 9. A continuacion presentaremos las imagenes de nuestro propio modulo siendo compilado, cardgado y descargado
  **Compilacion del modulo**  
@@ -316,50 +317,49 @@ El proceso de firmado de un módulo de kernel fue exitoso. Este procedimiento co
     3. En el log del kernel (`dmesg`) aparecerá información relacionada con el rechazo del módulo.  
        
 
-12. ####  **Resumen de la situación**
+11. ####  **Resumen de la situación**
 
-    En 2024, Microsoft lanzó un **parche de seguridad** para mitigar una vulnerabilidad crítica en GRUB2, el gestor de arranque ampliamente utilizado por Linux. La vulnerabilidad permitiría, en algunos casos, ejecutar código malicioso durante el arranque si Secure Boot estaba habilitado.  
-a. El parche invalida versiones antiguas de GRUB firmadas, rompiendo el arranque de muchas instalaciones de Linux en sistemas con arranque dual. Esto provoca que el sistema no arranque: aparece una pantalla negra o errores del tipo `shim_lock` o directamente se salta el arranque de Linux.
+	En 2024, Microsoft lanzó un **parche de seguridad** para mitigar una vulnerabilidad crítica en GRUB2, el gestor de arranque ampliamente utilizado por Linux. La vulnerabilidad permitiría, en 		algunos casos, ejecutar código malicioso durante el arranque si Secure Boot estaba habilitado.  
+	a. El parche invalida versiones antiguas de GRUB firmadas, rompiendo el arranque de muchas instalaciones de Linux en sistemas con arranque dual. Esto provoca que el sistema no arranque: aparece 	una pantalla negra o errores del tipo `shim_lock` o directamente se salta el arranque de Linux.
+	Muchos usuarios con dual boot Windows \+ Linux vieron que su instalación de Linux ya no arrancaba tras aplicar actualizaciones de Windows. Algunas distribuciones tuvieron que actualizar sus 		imágenes y firmar nuevos GRUB para evitar quedar inservibles en sistemas con Secure Boot.
 
-   Muchos usuarios con dual boot Windows \+ Linux vieron que su instalación de Linux ya no arrancaba tras aplicar actualizaciones de Windows. Algunas distribuciones tuvieron que actualizar sus imágenes y firmar nuevos GRUB para evitar quedar inservibles en sistemas con Secure Boot.
+	b. Desactivar Secure Boot elimina la validación criptográfica del software que se ejecuta durante el arranque.  
+  
+	**Ventajas (aparentes o inmediatas)**
 
-b. Desactivar Secure Boot elimina la validación criptográfica del software que se ejecuta durante el arranque.
+	* Permite arrancar versiones de GRUB y kernels que fueron invalidadas por la actualización de la base de revocación (dbx).
 
-   #### **Ventajas (aparentes o inmediatas)**
+	* Restaura el funcionamiento de un sistema Linux que quedó inutilizado tras el parche de Microsoft.
 
-* Permite arrancar versiones de GRUB y kernels que fueron invalidadas por la actualización de la base de revocación (dbx).
+	* Facilita la carga de módulos del kernel no firmados (útil en desarrollos como este TP).  
 
-* Restaura el funcionamiento de un sistema Linux que quedó inutilizado tras el parche de Microsoft.
+   	**Desventajas (reales y de seguridad)**
 
-* Facilita la carga de módulos del kernel no firmados (útil en desarrollos como este TP).
+	* Se pierde la protección frente a ataques que comprometan el arranque (bootkits, rootkits).
 
-		**Desventajas (reales y de seguridad)**
+	* Cualquier binario malicioso podría ejecutarse desde el arranque sin ser detectado por el firmware.
 
-* Se pierde la protección frente a ataques que comprometan el arranque (bootkits, rootkits).
-
-* Cualquier binario malicioso podría ejecutarse desde el arranque sin ser detectado por el firmware.
-
-* El sistema puede arrancar desde medios externos con software no confiable sin alertar.
+	* El sistema puede arrancar desde medios externos con software no confiable sin alertar.
 
 
-c. Propósito principal: evitar la ejecución de software no autorizado o malicioso durante el arranque del sistema operativo.
+	c. Propósito principal: evitar la ejecución de software no autorizado o malicioso durante el arranque del sistema operativo.
 
-   **Funcionamiento:**
+	**Funcionamiento:**
 
-   Secure Boot forma parte del firmware UEFI y utiliza criptografía de clave pública para:
+	Secure Boot forma parte del firmware UEFI y utiliza criptografía de clave pública para:
 
-1. Verificar la firma digital de cada componente de arranque (bootloader, kernel, etc.).
+	1. Verificar la firma digital de cada componente de arranque (bootloader, kernel, etc.).
 
-2. Permitir o denegar la ejecución según si la firma es válida y confiable.
+	2. Permitir o denegar la ejecución según si la firma es válida y confiable.
 
-3. Detener el arranque si detecta binarios alterados o no firmados.
+	3. Detener el arranque si detecta binarios alterados o no firmados.
 
-   **Contra qué protege:**
+	**Contra qué protege:**
 
-   Protege contra ataques de bajo nivel como:
+   	Protege contra ataques de bajo nivel como:
 
-* Bootkits (malware que se carga antes del SO).
+	* Bootkits (malware que se carga antes del SO).
 
-* Rootkits persistentes.
+	* Rootkits persistentes.
 
-* Software malicioso que se infiltra en el arranque para ocultarse del antivirus.
+	* Software malicioso que se infiltra en el arranque para ocultarse del antivirus.
