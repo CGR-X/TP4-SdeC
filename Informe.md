@@ -5,7 +5,7 @@
 ## **Trabajo práctico n° 4: Módulos de kernel y llamadas a sistemas**  
   
   
-### Condiciones de aprobación:  
+### Consignas:  
 
 En el transcurso de la clase se le plantearán dos desafíos que serán evaluados en coloquios grupales con la entrega de la segunda parte del TP\#4. Concretamente serán:
 
