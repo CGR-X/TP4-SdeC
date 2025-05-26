@@ -32,7 +32,7 @@ Bibliografía
 [https://docs.google.com/presentation/d/1BYES6Zkfx5K85REWyXsFeW-VngBLOzlDzaYCsTVoc0Y/edit\#slide=id.g724a4c87a0\_0\_5](https://docs.google.com/presentation/d/1BYES6Zkfx5K85REWyXsFeW-VngBLOzlDzaYCsTVoc0Y/edit#slide=id.g724a4c87a0_0_5)
  
 --------------------------------------------------
-# Pasos 
+### Pasos 
 
 cd part1  
 make  
